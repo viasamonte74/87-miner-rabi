@@ -1,0 +1,5 @@
+# Public HTTP origin for the Cloudflare Worker (no auth).
+# Container :9000 → host $VAST_TCP_PORT_9000 (e.g. 41261)
+:9000 {
+	reverse_proxy 127.0.0.1:8787
+}

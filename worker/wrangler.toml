@@ -1,0 +1,16 @@
+name = "provx"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+# Set after deploy:
+#   npx wrangler secret put ORIGIN
+# Value example (Vast public HTTP to Caddy→miner):
+#   http://86.4.231.37:41261
+#
+# Public miner URL after deploy:
+#   https://provx.<your-workers-subdomain>.workers.dev
+#   (yours: https://provx.mstjeon6.workers.dev)
+
+[vars]
+# Do not put ORIGIN here if it is sensitive; use `wrangler secret put ORIGIN`.
